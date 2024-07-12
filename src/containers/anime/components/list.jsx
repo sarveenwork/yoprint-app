@@ -88,7 +88,6 @@ const List = () => {
 
       <Grid container spacing={2}>
         {state?.isLoading ? (
-          // Display loading items
           [...Array(18)].map((_, index) => (
             <Grid item xs={12} sm={6} md={4} lg={4} xl={3} key={index}>
               <ItemCardLoading />
@@ -101,7 +100,6 @@ const List = () => {
             </Grid>
           ))
         ) : (
-          // Display empty state
           <Grid item xs={12}>
             <Typography>No Anime Found</Typography>
           </Grid>

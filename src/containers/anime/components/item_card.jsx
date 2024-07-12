@@ -8,8 +8,6 @@ import { Link as RouterLink } from 'react-router-dom';
 const ItemCard = ({ item }) => {
 
     return (
-        // <ButtonBase component={RouterLink} to={`/anime/${item?.id}`}>
-
         <Card className='card' component={RouterLink} to={`/anime/${item?.mal_id}`} style={{ textDecoration: 'none' }}>
             <CardMedia
                 className='cardMedia'
@@ -30,7 +28,6 @@ const ItemCard = ({ item }) => {
 
             </CardContent>
         </Card>
-        // </ButtonBase>
 
     );
 }
