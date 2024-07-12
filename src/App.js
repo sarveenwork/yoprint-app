@@ -6,7 +6,7 @@ import TopBar from './containers/components/top_bar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ maxWidth: '1200px', width: '100%', margin: '0 auto' }}>
        <Router>
           <TopBar />
           <AppRouter />

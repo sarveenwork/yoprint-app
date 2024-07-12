@@ -90,13 +90,13 @@ const List = () => {
         {state?.isLoading ? (
           // Display loading items
           [...Array(18)].map((_, index) => (
-            <Grid item xs={12} sm={6} md={4} lg={3} xl={2} key={index}>
+            <Grid item xs={12} sm={6} md={4} lg={4} xl={3} key={index}>
               <ItemCardLoading />
             </Grid>
           ))
         ) : state?.anime.length > 0 ? (
           state.anime.map((item, index) => (
-            <Grid item xs={12} sm={6} md={4} lg={3} xl={2} key={index}>
+            <Grid item xs={12} sm={6} md={4} lg={4} xl={3} key={index}>
               <ItemCard item={item} />
             </Grid>
           ))
